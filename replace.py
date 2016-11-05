@@ -10,7 +10,7 @@ filename = sys.argv[1]
 def searchfile(filename):
   openfile2 = open(filename, 'r')
   openfile = openfile2.read()
-  openfile1 = openfile.replace('idan','shlomi')
+  openfile1 = openfile.replace('valuetoreplace','newvalue')
   valuewwrite = open(filename, 'w')
   valuewwrite.write(openfile1)
   logging.warning(filename+"\n\n"+openfile1)
